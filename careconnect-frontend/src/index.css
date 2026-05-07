@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ================= ROOT VARIABLES ================= */
+:root {
+  --primary: #0a6e5c;
+  --primary-light: #13a689;
+  --primary-dark: #074d41;
+  --accent: #f0a500;
+  --danger: #e53e3e;
+  --success: #2f855a;
+  --warning: #d97706;
+
+  --bg: #f7f9f8;
+  --surface: #ffffff;
+  --surface2: #eef4f2;
+  --border: #d1e0db;
+
+  --text: #1a2e2a;
+  --text-muted: #5a7872;
+  --text-light: #8fada7;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
+  --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
+
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+}
+
+/* ================= GLOBAL ================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ================= LINKS ================= */
+a {
+  color: var(--primary);
+}
+a:hover {
+  color: var(--primary-light);
+}
+
+/* ================= INPUT ================= */
+input, textarea, select {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+}
+
+input:focus {
+  border-color: var(--primary-light);
+  outline: none;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  padding: 12px 20px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background: var(--primary-light);
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin: 10px;
+}
+
+/* ================= LOGIN PAGE ================= */
+.page-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-card {
+  background: white;
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  width: 350px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* ================= DASHBOARD ================= */
+.dashboard-layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--primary-dark);
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ================= DOCTOR CARD ================= */
+.doctor-card {
+  padding: 20px;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.doctor-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+/* ================= APPOINTMENT ================= */
+.appt-card {
+  padding: 15px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin: 10px;
+}
+
+/* ================= STATUS ================= */
+.badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.badge-pending {
+  background: #fff3cd;
+}
+
+.badge-confirmed {
+  background: #d4edda;
+}
+
+.badge-cancelled {
+  background: #f8d7da;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+}

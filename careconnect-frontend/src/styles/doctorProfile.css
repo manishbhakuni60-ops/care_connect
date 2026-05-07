@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.doctor-profile-page {
+
+  min-height: 100vh;
+
+  padding: 50px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #eff6ff,
+      #f8fafc
+    );
+}
+
+/* HERO */
+
+.doctor-hero {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  margin-bottom: 40px;
+}
+
+.doctor-avatar {
+
+  width: 110px;
+
+  height: 110px;
+
+  border-radius: 50%;
+
+  background: white;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  font-size: 50px;
+
+  box-shadow:
+    0 8px 25px rgba(0,0,0,0.1);
+}
+
+.doctor-hero h1 {
+
+  font-size: 42px;
+
+  color: #111827;
+}
+
+.doctor-hero p {
+
+  margin-top: 10px;
+
+  color: #6b7280;
+
+  font-size: 18px;
+}
+
+/* GRID */
+
+.profile-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(350px, 1fr));
+
+  gap: 25px;
+
+  margin-bottom: 30px;
+}
+
+/* CARD */
+
+.profile-card {
+
+  background:
+    rgba(255,255,255,0.55);
+
+  border:
+    1px solid rgba(255,255,255,0.4);
+
+  border-radius: 28px;
+
+  padding: 30px;
+
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+
+  box-shadow:
+    0 8px 30px rgba(0,0,0,0.08);
+
+  margin-bottom: 25px;
+}
+
+.profile-card h2 {
+
+  margin-bottom: 20px;
+
+  color: #111827;
+}
+
+.profile-card p {
+
+  line-height: 1.8;
+
+  color: #4b5563;
+
+  margin-bottom: 12px;
+}
+
+.profile-card ul {
+
+  padding-left: 20px;
+}
+
+.profile-card li {
+
+  margin-bottom: 14px;
+
+  color: #374151;
+}
+
+/* SLOT */
+
+.slot-box {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  margin-bottom: 15px;
+}
+
+.slot-box button {
+
+  padding: 12px 18px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      to right,
+      #111827,
+      #1f2937
+    );
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* REVIEW */
+
+.review-box {
+
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 18px;
+
+  margin-bottom: 15px;
+}
+
+.review-box h3 {
+
+  margin-bottom: 10px;
+}
